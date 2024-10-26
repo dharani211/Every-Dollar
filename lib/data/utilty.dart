@@ -193,10 +193,10 @@ String formatCurrency(int value) {
   final format = NumberFormat.currency(
     symbol: '', // Empty symbol to remove the currency symbol
     decimalDigits: 0, // Number of decimal digits (set to 0 for VND)
-    locale: 'vi_VN', // Vietnamese locale for formatting
+    locale: 'vi_VN',
   );
 
-  return '${format.format(value)}VND'; // Append ' vnđ' to the formatted value
+  return '${format.format(value)}USD';
 }
 
 String getFormattedDate(int index, DateTime selectedDate) {
